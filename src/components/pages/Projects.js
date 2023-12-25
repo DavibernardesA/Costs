@@ -5,7 +5,9 @@ import Container from "../layout/Container";
 import LinkButton from '../layout/LinkButton';
 import ProjectCard from "../project/ProjectCard";
 import { useState, useEffect } from "react";
-
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+  
 function Projects() {
   const [projects, setProjects] = useState([]);
   const navigate = useNavigate();
@@ -14,12 +16,7 @@ function Projects() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const location = navigate();
-
-        if (location.state) {
-          setMessage(location.state.message);
-        }
-
+     
         const response = await fetch('http://localhost:5000/projects', {
           method: 'GET',
           headers: {
@@ -39,11 +36,14 @@ function Projects() {
 
   return (
     <div className={styles.project_container}>
+         <ToastContainer />
+
+
       <div className={styles.title_container}>
         <h1>Meus Projetos</h1>
         <LinkButton to="/newproject" text="Criar Projeto" />
       </div>
-      {message && <Message type="success" msg={message} />}
+
       <Container customClass="start">
         {projects.length > 0 &&
           projects.map((project) => (
@@ -56,6 +56,7 @@ function Projects() {
             />
           ))}
       </Container>
+
     </div>
   );
 }

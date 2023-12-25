@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectForm from '../project/ProjectForm';
 import styles from './NewProject.module.css';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 function NewProject() {
 
@@ -25,7 +26,7 @@ function NewProject() {
       console.log(data);
       //redirect
       navigate('/projects', { state: { mensagem: 'Projeto criado com sucesso!' } });
-
+      toast.success("Projeto criado com sucesso!");
     } catch (err) {
       console.error("Erro ao criar projeto:", err);
     }
