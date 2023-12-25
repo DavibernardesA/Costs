@@ -1,0 +1,50 @@
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3em;
+  text-align: center;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin:  0 1em;
+}
+
+.social_list .instagram:hover {
+  color: #ff3493;
+}
+
+.social_list .discord:hover {
+  color: #867beb;
+}
+
+.social_list .whatsapp:hover {
+  color: #21e442;
+}
+
+.social_list .linkedin:hover {
+  color: #2d63f8;
+}
+
+.social_list .github:hover {
+  color: #867beb;
+}
+
+.social_list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.copy_right {
+  margin-top: 2em;
+}
+
+.copy_right span{
+  font-weight: bold;
+  color: #ffbb33;
+}
