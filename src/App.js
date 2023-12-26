@@ -7,6 +7,7 @@ import NewProject from './components/pages/NewProject'
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Project from './components/pages/Project';
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Container customClass="minHeight">
         <Routes>
           <Route path='/' caseSensitive element={<Home />} />
-          <Route path='/projects' caseSensitive element={<Projects />} />
-          <Route path='/company' caseSensitive element={<Company />} />
-          <Route path='/contact' caseSensitive element={<Contact />} />
-          <Route path='/newproject' caseSensitive element={<NewProject />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/company' element={<Company />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/newproject' element={<NewProject />} />
+          <Route path='/project/:id' element={<Project />} />
         </Routes>
       </Container>
       <Footer />

@@ -1,7 +1,7 @@
 import styles from './ProjectCard.module.css';
 import { Link } from 'react-router-dom';
 import { BsPencil, BsFillTrashFill } from 'react-icons/bs';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function ProjectCard({ id, name, budget, category, handleRemove }) {
@@ -22,7 +22,7 @@ function ProjectCard({ id, name, budget, category, handleRemove }) {
         <span className={`${styles[category.toLowerCase()]}`}></span> {category}
       </p>
       <div className={styles.project_card_actions}>
-        <Link to='/'>
+        <Link to={`/project/${id}`}>
           <BsPencil /> Editar
         </Link>
         <button onClick={remove} >
