@@ -12,27 +12,32 @@
 }
 
 .social_list li {
-  margin:  0 1em;
+  margin: 0 1em;
 }
 
-.social_list .instagram:hover {
-  color: #ff3493;
+.social_list a {
+  color: inherit; /* Herda a cor do pai (não afeta a cor original do ícone) */
+  text-decoration: none; /* Remover sublinhado padrão dos links */
 }
 
-.social_list .discord:hover {
-  color: #867beb;
+.social_list .instagram a:hover {
+  color: #ff3493; /* Cor de destaque ao passar o mouse para o Instagram */
 }
 
-.social_list .whatsapp:hover {
-  color: #21e442;
+.social_list .discord a:hover {
+  color: #867beb; /* Cor de destaque ao passar o mouse para o Discord */
 }
 
-.social_list .linkedin:hover {
-  color: #2d63f8;
+.social_list .whatsapp a:hover {
+  color: #21e442; /* Cor de destaque ao passar o mouse para o WhatsApp */
 }
 
-.social_list .github:hover {
-  color: #867beb;
+.social_list .linkedin a:hover {
+  color: #2d63f8; /* Cor de destaque ao passar o mouse para o LinkedIn */
+}
+
+.social_list .github a:hover {
+  color: #867beb; /* Cor de destaque ao passar o mouse para o GitHub */
 }
 
 .social_list svg {
@@ -44,7 +49,7 @@
   margin-top: 2em;
 }
 
-.copy_right span{
+.copy_right span {
   font-weight: bold;
   color: #ffbb33;
 }
