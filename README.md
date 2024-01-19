@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Costs - Sistema de Gerenciamento de Projetos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/10e98cfd-b129-435c-bb0b-835619082e2b' alt="" style="width: 70%; height: 50% auto;">
 
-## Available Scripts
+## Visão Geral
 
-In the project directory, you can run:
+O Costs é um projeto desenvolvido em JavaScript e React.js que oferece funcionalidades completas de CRUD para gerenciar projetos. O sistema permite a criação, edição e exclusão de projetos, fornecendo uma maneira eficiente de controlar os custos associados a cada projeto, respeitando um orçamento máximo predefinido.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **JavaScript:** Linguagem de programação principal.
+- **React.js:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **server.json:** Biblioteca para o backend.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pré-requisitos
 
-### `npm test`
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes de prosseguir:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- npm (Node Package Manager)
 
-### `npm run build`
+## Configuração e Execução
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone o repositório usando SSH:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Abra o terminal e digite o seguinte comando para copiar o repositório com SSH:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git@github.com:DavibernardesA/Costs.git
 
-### `npm run eject`
+1. **Navegue até o diretório do projeto:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd costs
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Instale as dependências e inicie o frontend:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  Isso iniciará a aplicação frontend, e você poderá acessá-la em http://localhost:3000.
 
-## Learn More
+3. **Abra outro terminal e inicie o backend:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+     cd costs
+    npm run backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ O backend será iniciado e estará disponível em http://localhost:5000.
 
-### Code Splitting
+ ## Uso do Sistema
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Abra o navegador e acesse http://localhost:3000.
 
-### Analyzing the Bundle Size
+2. Utilize as opções fornecidas para criar, editar e excluir projetos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Mantenha o terminal do backend em execução para garantir a funcionalidade completa do sistema.
 
-### Making a Progressive Web App
+ ## Usando o Costs 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**1. No costs será possivel criar seus proprios projetos:** 
 
-### Advanced Configuration
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/a90826dc-fd7b-4344-8c88-3700b6a708f2' alt="" style="width: 70%;height: 50% auto;">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**2. Na opção de "Projetos" seá possivel acessar todos os seus projetos alem de editar e deletar:** 
 
-### Deployment
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/80fbe68c-534c-4e6a-90b3-dc0d98d50a73' alt="" style="width: 70%;height: 50% auto;">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**3. Além de editar o projeto em si você pode adicionar serviços:**
 
-### `npm run build` fails to minify
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/ef06977f-78e1-4f37-9662-99a1ee56cbfc' alt="" style="width: 70%;height: 50% auto;">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**4. Caso crie um serviço com valor maior do orçamento você sera impedido por uma notificão flutuante:**
+
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/0c9d1bbc-6879-497c-9025-ab6521b4a35e' alt="" style="width: 50%;height: 50% auto;">
+
+**5. Se for um sucesso um novo local de serviço será criado:**
+
+notifição:
+
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/70090841-16de-4217-aa27-95c734c0192b' alt="" style="width: 50%;height: 50% auto;">
+
+local do serviço:
+
+  <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/dd3bea39-d511-45e1-a36b-5d874cbba8a6' alt="" style="width: 70%;height: 50% auto;">
+
+ ##  Agradecimentos
+
+ Agradeço ao professor Matheus Battisti, cujo suporte e instrução foram fundamentais para o desenvolvimento deste projeto, através do curso de React.
+
+ ## Autor✍️
+
+<a href=https://github.com/DavibernardesA>
+<img src="https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/6ba09c22-9eae-4601-980c-81533bd7b4f9" width="100px;" alt=""/>
+<br>
+<b>Davi Bernardes</b></a>
+<br/>
+Entre em contato:
+
+
+[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/davi-bernardes-do-nascimento-7b62a4274/)](https://www.linkedin.com/in/davi-bernardes-do-nascimento-7b62a4274/)
+[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:davi.10bernardes@gmail.com)](mailto:davi.10bernardes@gmail.com)
