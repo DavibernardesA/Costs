@@ -1,25 +1,27 @@
-# Costs - Sistema de Gerenciamento de Projetos
+# Costs - Sistema de Gerenciamento de Projetos💰
 
-<img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/10e98cfd-b129-435c-bb0b-835619082e2b' alt="" style="width: 70%; height: 50% auto;">
+**Home:**
 
-## Visão Geral
+<img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/10e98cfd-b129-435c-bb0b-835619082e2b' alt="" style="width: 70%;">
+
+
+## Descrição
 
 O Costs é um projeto desenvolvido em JavaScript e React.js que oferece funcionalidades completas de CRUD para gerenciar projetos. O sistema permite a criação, edição e exclusão de projetos, fornecendo uma maneira eficiente de controlar os custos associados a cada projeto, respeitando um orçamento máximo predefinido.
 
-## Tecnologias Utilizadas
+## Técnicas e tecnologias utilizadas🛠️
 
-- **JavaScript:** Linguagem de programação principal.
-- **React.js:** Biblioteca JavaScript para construção de interfaces de usuário.
-- **server.json:** Biblioteca para o backend.
+- **- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)** Linguagem de programação principal.
+- **- [React.js](https://react.dev/)** Biblioteca JavaScript para construção de interfaces de usuário.
+- **- [json.server](https://www.npmjs.com/package/json-server)** Biblioteca para o backend.
 
 ## Pré-requisitos
 
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes de prosseguir:
 
-- Node.js
-- npm (Node Package Manager)
+- [Node.js](https://nodejs.org/en)
 
-## Configuração e Execução
+## Configuração e Execução👆
 
 1. **Clone o repositório usando SSH:**
 
@@ -49,7 +51,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
  O backend será iniciado e estará disponível em http://localhost:5000.
 
- ## Uso do Sistema
+ ## Uso do Sistema👨‍💻
 
 1. Abra o navegador e acesse http://localhost:3000.
 
@@ -57,7 +59,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina antes d
 
 3. Mantenha o terminal do backend em execução para garantir a funcionalidade completa do sistema.
 
- ## Usando o Costs 
+ ## Usando o Costs🚀
 
 **1. No costs será possivel criar seus proprios projetos:** 
 
@@ -85,7 +87,7 @@ local do serviço:
 
   <img src='https://github.com/DavibernardesA/sistema-bancario-backend/assets/133716733/dd3bea39-d511-45e1-a36b-5d874cbba8a6' alt="" style="width: 70%;height: 50% auto;">
 
- ##  Agradecimentos
+ ##  Agradecimentos🤝
 
  Agradeço ao professor Matheus Battisti, cujo suporte e instrução foram fundamentais para o desenvolvimento deste projeto, através do curso de React.
 
